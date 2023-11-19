@@ -2,7 +2,7 @@ const removeDuplicates = function(arr) {
   let uniqueMap = new Map();
 
   arr.forEach(element => {
-      uniqueMap.set(element, 0);
+    uniqueMap.set(element, 0);
   });
   
   let uniqueArray = Array.from(uniqueMap.keys());

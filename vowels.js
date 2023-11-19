@@ -3,8 +3,7 @@ const numberOfVowels = function(data) {
   let count = 0;
   let arr = data.split("");
   arr.forEach(letter => {
-
-    if(vowels.includes(letter))
+    if (vowels.includes(letter))
       count++;
   });
   return count;

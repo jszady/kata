@@ -1,6 +1,6 @@
 const sumLargestNumbers = function(data) {
   //sorts the data from smallest to largest;
-  data.sort((a,b) => a-b);
+  data.sort((a,b) => a - b);
   const lastElement = data.length - 1;
 
   return data[lastElement] + data[lastElement - 1];

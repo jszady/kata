@@ -3,13 +3,12 @@ const urlEncode = function(text) {
   
   let arr = noSpaces.split("");
 
-  let encodeing = arr.map( space =>{
-    if(space === " ")
-    {
+  let encodeing = arr.map(space => {
+    if (space === " ") {
       space = "%20";
     }
     return space;
-  })
+  });
   let encoded = encodeing.join("");
   return encoded;
 };

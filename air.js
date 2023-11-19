@@ -1,17 +1,16 @@
-const checkAir = function (samples, threshold) {
+const checkAir = function(samples, threshold) {
   let total = samples.length;
   let dirty = 0;
 
   samples.forEach(element => {
-    if(element === "dirty"){
+    if (element === "dirty") {
       dirty++;
     }
   });
-  const precentDirty = dirty/total;
+  const precentDirty = dirty / total;
 
-  if(precentDirty > threshold)
-  {
-    return "polluted"
+  if (precentDirty > threshold) {
+    return "polluted";
   }
   return "clean";
 };
@@ -29,4 +28,4 @@ console.log(checkAir(
 console.log(checkAir(
   ['clean', 'dirty', 'clean', 'dirty', 'clean', 'dirty', 'clean'],
   0.9
-))
+));
